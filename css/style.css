@@ -41,3 +41,17 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body{
+	font-size: 0.875em;
+	color: #ffffff;
+}
+header{
+	background:  url("../images/small_circles.png") no-repeat 50% 0%, url("../images/large_circles.png") no-repeat 0% 0%;
+}
+
+
+.alignment{
+	width: 1024px;
+	margin: 0 auto;
+}
