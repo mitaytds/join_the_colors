@@ -45,13 +45,38 @@ table {
 body{
 	font-size: 0.875em;
 	color: #ffffff;
+	background: #f74c55;
 }
 header{
-	background:  url("../images/small_circles.png") no-repeat 50% 0%, url("../images/large_circles.png") no-repeat 0% 0%;
+	height: 496px;
+	background: url("../images/small_circles.png") no-repeat 100% 100%, url("../images/large_circles.png") no-repeat -7% 0%;
+}
+article{
+	background: #ffffff;
 }
 
 
-.alignment{
+.inner{
 	width: 1024px;
-	margin: 0 auto;
+	margin: 0 10% 0 10%;
+}
+.cols{
+	float: left;
+}
+.col_1{
+	background: grey;
+	width: 37.5%;
+}
+.col_2{
+	width: 28.1%;
+	background: red;
+}
+.col_3{
+	width: 34.375%;
+	background: green;
+}
+.grid:after{
+	content: "";
+	display: table;
+	clear: both;
 }
