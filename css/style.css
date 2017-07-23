@@ -49,15 +49,18 @@ body{
 }
 header{
 	height: 496px;
-	background: url("../images/small_circles.png") no-repeat 100% 100%, url("../images/large_circles.png") no-repeat -7% 0%;
+	background: url("../images/small_circles.png") no-repeat 100% -800%, url("../images/large_circles.png") no-repeat 0% 0%;
 }
 article{
 	background: #ffffff;
 }
+h1{
+	font-size: 42px;
+}
 
 
 .inner{
-	width: 1024px;
+	width: 80%;
 	margin: 0 10% 0 10%;
 }
 .cols{
@@ -65,18 +68,24 @@ article{
 }
 .col_1{
 	background: grey;
-	width: 37.5%;
+	width: 27.5%;
+	padding-left: 10%;
 }
 .col_2{
 	width: 28.1%;
 	background: red;
 }
 .col_3{
-	width: 34.375%;
+	width: 24.375%;
 	background: green;
+	padding-right: 10%;
 }
-.grid:after{
+/*.grid:after{
 	content: "";
 	display: table;
+	clear: both;
+}*/
+
+.clearfix{
 	clear: both;
 }
