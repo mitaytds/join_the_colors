@@ -55,7 +55,11 @@ article{
 	background: #ffffff;
 }
 h1{
+	font-family: Abadi;
 	font-size: 42px;
+}
+ul{
+	font-family: Helvetica;
 }
 
 
