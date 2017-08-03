@@ -58,38 +58,75 @@ h1{
 	font-family: Abadi;
 	font-size: 42px;
 }
+h2{
+	font-size: 30px;
+}
+h3{
+	padding: 10px;
+}
+a{
+	text-decoration: none;
+}
 ul{
 	font-family: Helvetica;
 }
-
+li{
+	display: inline-block;
+}
+footer{
+	text-align: center;
+}
 
 .inner{
+	position: relative;
 	width: 80%;
 	margin: 0 10% 0 10%;
 }
+.logo{
+	display: inline-block;
+	margin-top: 15px;
+}
+.navigation{
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+.header_box{
+	position: absolute;
+	top: 200px;
+	left: 560px;
+}
+.inner_content{
+	padding: 90px 80px;
+}
 .cols{
-	float: left;
+	float: left; 
 }
 .col_1{
 	background: grey;
-	width: 27.5%;
+	width: 26.665%;
 	padding-left: 10%;
 }
 .col_2{
-	width: 28.1%;
-	background: red;
+	width: 26.665%;
+	background: #f74c55;
 }
 .col_3{
-	width: 24.375%;
+	width: 26.665%;
 	background: green;
 	padding-right: 10%;
 }
-/*.grid:after{
-	content: "";
-	display: table;
-	clear: both;
-}*/
-
 .clearfix{
 	clear: both;
+}
+.cols div{
+	padding: 3em 2em;
+}
+
+.inner_contant p{
+	margin-top: 30px;
+}
+
+h3 img{
+	margin-top: 5px;
 }
