@@ -2,3 +2,7 @@
 	font-family: Abadi;
 	src: url("../fonts/abadi-mt-std-extra-light-5977524832746.otf");
 }
+@font-face{
+	font-family: Open Sans;
+	src: url("../fonts/2211.ttf");
+}
