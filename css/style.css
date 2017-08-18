@@ -181,6 +181,7 @@ footer{
 	vertical-align: middle;
 }
 .btn_plus{
+	cursor: pointer;
 	float: right;
 	width: 35px;
 	height: 35px;
@@ -212,4 +213,54 @@ footer{
 	margin: 50px auto 45px auto;
 	padding-left: 13px;
 	padding-right: 13px;
+}
+.popup:before{
+	position: relative;
+	content: "";
+	display: none;
+	background: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+.popup:target:before{
+	display: block;
+}
+.windows{
+	position: fixed;
+	left: 20%;
+	top: -50%;
+	z-index: 11;
+	width: 60%;
+	height: 40%;
+}
+.popup:target .windows{
+	transform: translate(0, 0);
+	top: 25%;
+}
+.close img{
+	position: absolute;
+	top: -17px;
+	right: -17px;
+	max-width: 15px;
+	height: 15px;
+}
+.reg{
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+.green_window{
+	background: #2d5f3b;
+}
+.grey_window{
+	background: #404040;
+}
+.close img:hover{
+	transition: 0.2s ease-in-out;
+	transform: rotate(90deg);
 }
