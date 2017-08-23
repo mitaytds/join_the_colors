@@ -186,9 +186,11 @@ footer{
 	width: 35px;
 	height: 35px;
 	background: rgba(0, 0, 0, 0.5);
-	border: none;
-	padding-top: 3px;
+	text-align: center;
 	margin-top: 20px;
+}
+.btn_plus img{
+	margin-top: 8px;
 }
 .clearfix{
 	clear: both;
@@ -248,11 +250,13 @@ footer{
 	max-width: 15px;
 	height: 15px;
 }
-.registration{
+/*.registration{
 	text-align: center;
 	vertical-align: middle;
+}*/
+.registration .registration_name{
+	margin: 50px auto;
 }
-
 
 .green_window{
 	background: #2d5f3b;
@@ -263,4 +267,10 @@ footer{
 .close img:hover{
 	transition: 0.2s ease-in-out;
 	transform: rotate(90deg);
+}
+.btn_plus:hover{
+	transform: scale(1.1);
+}
+.btn_plus:active{
+	transform: scale(0.9);
 }
