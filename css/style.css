@@ -231,11 +231,11 @@ footer{
 }
 .windows{
 	position: fixed;
-	left: 20%;
+	left: 25%;
 	top: -50%;
 	z-index: 11;
-	width: 60%;
-	height: 40%;
+	width: 50%;
+	height: 50%;
 }
 .popup:target .windows{
 	transform: translate(0, 0);
@@ -248,7 +248,7 @@ footer{
 	max-width: 15px;
 	height: 15px;
 }
-.reg{
+.registration{
 	text-align: center;
 	vertical-align: middle;
 }
