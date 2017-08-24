@@ -250,12 +250,17 @@ footer{
 	max-width: 15px;
 	height: 15px;
 }
-/*.registration{
+.registration{
 	text-align: center;
 	vertical-align: middle;
-}*/
-.registration .registration_name{
-	margin: 50px auto;
+}
+.registration_field input{
+	display: block;
+	width: 215px;
+	margin: 15px auto;
+}
+.registration_field input:nth-child(3){
+	background: green;
 }
 
 .green_window{
