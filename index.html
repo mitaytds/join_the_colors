@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<title>Join the colors</title>
 </head>
 <body>
 	<div class="popup" id="popup1">
-		<div class="windows green_window">
-			<a href="#close" class="close" title="close"><img src="images/close.png" alt="close"></a>
+		<div class="windows registr_window">
+			<a href="#close" class="close" title="Close"><img src="images/close.png" alt="close"></a>
 			<form class="registration" action="" method="post">
 				<h1>Join the colors.</h1>
 				<span>There are only 3 colors, 10 digits</span>
@@ -17,7 +19,7 @@
 					<input type="text" name="user name" placeholder="User name">
 					<input type="password" name="password" placeholder="Password">
 				</div>
-				<input type="submit" name="login" value="Log in">
+				<input type="submit" name="login" value="Log in" class="btn">
 			</form>
 		</div>
 	</div>
@@ -61,7 +63,7 @@
 					<h3>SEO Optimized</h3>
 				</div>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make...</p>
-				<a class="btn_plus" title="add"><img src="images/button_plus.png"></a>
+				<a class="btn_plus" title="Open"><img src="images/button_plus.png"></a>
 				<div class="clearfix"></div>
 			</div>
 		</section>
@@ -72,7 +74,7 @@
 					<h3>Responsive</h3>
 				</div>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make...</p>
-				<a class="btn_plus" title="add"><img src="images/button_plus.png"></a>
+				<a class="btn_plus" title="Open"><img src="images/button_plus.png"></a>
 				<div class="clearfix"></div>
 			</div>
 		</section>
@@ -83,7 +85,7 @@
 					<h3>Cloud Services</h3>
 				</div>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make...</p>
-				<a class="btn_plus" title="add"><img src="images/button_plus.png"></a>
+				<a class="btn_plus" title="Open"><img src="images/button_plus.png"></a>
 				<div class="clearfix"></div>
 			</div>
 		</section>
@@ -104,10 +106,22 @@
 	</div>
 	</footer>
 	<div class="popup" id="popup2">
-		<div class="windows grey_window">
-			<a href="#close" class="close" title="close"><img src="images/close.png" alt="close"></a>
-			<audio></audio>
+		<div class="windows media_window">
+			<a href="#close" class="close" title="Close"><img src="images/close.png" alt="close"></a>
+			<div id="container">
+  				<div id="disc"></div>
+  			</div>
+  			<script src="JavaScript.js"></script>
+			<audio class="audio" id="sound" src="sounds/Александр Пушной - Надо Радоваться, Не Надо Напрягаться!.mp3" preload="auto" type="audio/mpeg" controls></audio>
 		</div>
 	</div>
+	<script>
+		var audio = $("#sound")[0];
+		$("#container").mouseenter(function() {
+			audio.play();
+		}).mouseleave(function() {
+			audio.pause();
+		});
+	</script>
 </body>
 </html>
